@@ -39,11 +39,11 @@ with
   ),
   log_feature_long as (
     SELECT 
-        dataset, mode, pid, pcseq, regdatetime, medal_num,logkey,
+        dataset, mode, pid, pcseq, regdatetime, 
         arr_values.name as name, arr_values.value as value
     FROM (
         SELECT
-        dataset, mode, pid, pcseq, regdatetime, medal_num,logkey,
+        dataset, mode, pid, pcseq, regdatetime, 
         [
             STRUCT('ft01'                        AS name, ft01                            AS value),
             STRUCT('ft02'                        AS name, ft02                            AS value),
